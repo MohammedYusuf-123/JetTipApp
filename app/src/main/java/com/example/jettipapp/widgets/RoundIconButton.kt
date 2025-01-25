@@ -1,7 +1,6 @@
 package com.example.jettipapp.widgets
 
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -15,8 +14,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import com.example.jettipapp.R
 
 val IconbuttonSizeModifier = Modifier.size(40.dp)
 
@@ -40,8 +41,9 @@ fun RoundIconButton(
     ) {
         Icon(
             imageVector = imageVector,
-            contentDescription = "Plus or Minus icon",
-            modifier = Modifier.fillMaxSize()
+            contentDescription = stringResource(R.string.plus_or_minus_icon),
+            modifier = Modifier
+                .fillMaxSize()
                 .align(Alignment.CenterHorizontally),
             tint = tint
         )

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TipEase</string>
+    <string name="total_per_person">Total Per Person</string>
+    <string name="enter_bill">Enter Bill</string>
+    <string name="split">Split</string>
+    <string name="tip">Tip</string>
+    <string name="select_tip">Select Tip %</string>
+    <string name="plus_or_minus_icon">Plus or Minus icon</string>
+    <string name="money_icon">Money Icon</string>
 </resources>

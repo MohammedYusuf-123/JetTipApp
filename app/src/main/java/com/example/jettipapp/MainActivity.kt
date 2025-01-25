@@ -39,6 +39,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -91,7 +92,6 @@ fun TopHeader(totalPerPerson: Double) {
             .fillMaxWidth()
             .padding(15.dp)
             .height(150.dp)
-            //.clip(shape = CircleShape.copy(all = CornerSize(60.dp)))
             .padding(16.dp),
         shape = RoundedCornerShape(corner = CornerSize(12.dp)),
         color = Color(0xFFE9D7F7),
@@ -104,10 +104,9 @@ fun TopHeader(totalPerPerson: Double) {
         ) {
             val total = "%.2f".format(totalPerPerson)
             Text(
-                text = "Total Per Person",
+                text = stringResource(R.string.total_per_person),
                 style = MaterialTheme.typography.headlineMedium,
                 color = MaterialTheme.colorScheme.onBackground
-                /*TextStyle(fontWeight = FontWeight.Bold, fontSize = 16.sp)*/
             )
             Spacer(modifier = Modifier.height(10.dp))
             Text(
@@ -153,7 +152,7 @@ fun BillForm(
                 InputField(
                     modifier = modifier.fillMaxWidth(),
                     valueState = totalBillState,
-                    labelId = "Enter Bill",
+                    labelId = stringResource(R.string.enter_bill),
                     enabled = true,
                     isSingleLine = true,
                     onAction = KeyboardActions {
@@ -169,7 +168,7 @@ fun BillForm(
                         horizontalArrangement = Arrangement.Start
                     ) {
                         Text(
-                            text = "Split",
+                            text = stringResource(R.string.split),
                             modifier = modifier.align(alignment = Alignment.CenterVertically)
                         )
                         Spacer(modifier = modifier.width(120.dp))
@@ -211,7 +210,7 @@ fun BillForm(
                         modifier = modifier.padding(horizontal = 3.dp, vertical = 12.dp)
                     ) {
                         Text(
-                            text = "Tip",
+                            text = stringResource(R.string.tip),
                             modifier = modifier.align(alignment = Alignment.CenterVertically)
                         )
                         Spacer(modifier = modifier.width(183.dp))
@@ -223,7 +222,7 @@ fun BillForm(
 
                     Column {
                         Row {
-                            Text(text = "Select Tip %")
+                            Text(text = stringResource(R.string.select_tip))
                             Spacer(modifier = modifier.width(128.dp))
                             Text(text = "$tipPercentage%")
                         }
@@ -233,7 +232,6 @@ fun BillForm(
                             value = sliderPositionState.floatValue,
                             onValueChange = { newVal ->
                                 sliderPositionState.floatValue = newVal
-                                Log.d("Slider", "BillForm: $newVal")
                                 tipAmountState.doubleValue =
                                     calculateTotalTip(
                                         totalBill = totalBillState.value.toDouble(),
