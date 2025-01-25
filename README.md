@@ -53,3 +53,4 @@ cd tipease
 	3.	Commit your changes and push to your fork:
 			git commit -m "Add your message here"
 			git push origin feature/your-feature
+	4.	Open a pull request with a detailed description.
