@@ -49,3 +49,7 @@ cd tipease
 ### Contributions are welcome! Follow these steps to contribute:
 	1.	Fork the Repository: Click the “Fork” button on GitHub.
 	2.	Create a Branch: Create a new branch for your feature:
+			git checkout -b feature/your-feature
+	3.	Commit your changes and push to your fork:
+			git commit -m "Add your message here"
+			git push origin feature/your-feature
