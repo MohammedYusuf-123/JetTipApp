@@ -30,6 +30,7 @@
 ## Project Structure
 ﻿
 The project is organized into several modules and files for better maintainability and scalability:
+```
 - com.example.jettipapp
     - components/       # Reusable UI components like InputField
     - ui/theme/         # Theme and styling for the app
@@ -38,7 +39,7 @@ The project is organized into several modules and files for better maintainabili
     - MainActivity.kt   # The entry point of the app
     - BillForm.kt       # Core composable for tip calculation and bill splitting
     - TopHeader.kt      # Header composable showing total per person
-
+```
 ---
 
 ### Clone the Repository
