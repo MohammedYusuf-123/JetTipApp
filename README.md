@@ -28,14 +28,6 @@
 ---
 
 ## Getting Started
-
-### Clone the Repository
-To get a local copy of the project up and running, clone the repository:
-```bash
-git clone https://github.com/MohammedYusuf-123/TipEase.git)
-cd tipease
-
-
 - com.example.jettipapp
     - components/       # Reusable UI components like InputField
     - ui/theme/         # Theme and styling for the app
@@ -47,6 +39,11 @@ cd tipease
 
 ---
 
+### Clone the Repository
+To get a local copy of the project up and running, clone the repository:
+```bash
+git clone https://github.com/MohammedYusuf-123/TipEase.git
+cd tipease
 ### Contributions are welcome! Follow these steps to contribute:
 	1.	Fork the Repository: Click the “Fork” button on GitHub.
 	2.	Create a Branch: Create a new branch for your feature:
