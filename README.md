@@ -17,7 +17,7 @@
 ## Screenshots
 
 ### Home Screen
-<img src="screenshots/home_screen.png" alt="Home Screen" width="300"/>
+<img src="screenshots/home_screen.png" alt="Home Screen" width="300" height="500"/>
 
 ### Split Bill Feature
 <img src="screenshots/split_bill.png" alt="Split Bill" width="300"/>
